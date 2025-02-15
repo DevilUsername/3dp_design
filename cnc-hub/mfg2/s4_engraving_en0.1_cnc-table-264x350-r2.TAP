@@ -1,0 +1,44 @@
+%
+O1000 (CNC-TABLE-264X350X18-MATRIX-Y100-X95)
+G17
+( --- Initialisation AW --- )
+G0 G40 G49 G80 G21
+( --- Go To Machine Origin --- )
+G54
+(Tool # 13 - Diameter 3. D13 H13)
+T13 M6 D13 H13
+S24000 M4
+M8
+G54
+( ---- Start of s4-engraving-en0.1-cnc-table-264x350-r2 ---- )
+G0 G54 Z0  ; move up to tool_z_level
+G0 G54 A-0
+G0 Z10
+( ------------------------------------------------- )
+( S4-ENGRAVING-EN0.1-CNC-TABLE-264X350-R2 - PROFILE )
+( ------------------------------------------------- )
+G0 X14.563 Y2.924 Z5.
+ Z2.
+G1 Z-0.5 F2057.143
+G3 X14.563 Y2.924 I-9.563 J-2.924 F40
+G0 Z5.
+ X9.782 Y1.462
+ Z2.
+G1 Z-0.5 F2057.143
+G3 X9.782 Y1.462 I-4.782 J-1.462 F40
+G0 Z5.
+ X5. Y-10.
+ Z2.
+G1 Z-0.5 F2057.143
+ Y10. F40
+G0 Z5.
+ X10. Y4.5
+ Z2.
+G1 Z-0.5 F2057.143
+ X-10. F40
+G0 Z5.
+( ---- End of s4-engraving-en0.1-cnc-table-264x350-r2 ---- )
+M9 M5
+M30
+G0 Z100
+%
